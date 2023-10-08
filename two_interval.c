@@ -4,14 +4,9 @@ int main()
 {
     int s = 1, e = 500, num1, n, arm = 0, 
           i, num2, c;
- 
-    // Iterating the for loop using
-    // the given intervals
     for (i = s; i <= e; i++) {
         num1 = i;
         num2 = i;
- 
-        // Finding the number of digits
         while (num1 != 0) {
             num1 = num1 / 10;
             ++c;
@@ -26,9 +21,6 @@ int main()
             arm = arm + (pow);
             num2 = num2 / 10;
         }
- 
-        // If number is equal to the arm
-        // then it is a armstrong number
         if (arm == i) {
             printf("%d\n", i);
         }
